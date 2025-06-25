@@ -6,7 +6,7 @@ public class task2 {
         boolean gameover=true;
         int finalscore=score;
         if (gameover){
-            finalscore+=(level_completed*bonus);
+            finalscore+=(levelcompleted*bonus);
             System.out.println("the final score is :"+finalscore);
         }
 
