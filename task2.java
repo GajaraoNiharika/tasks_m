@@ -4,19 +4,16 @@ public class task2 {
         int levelcompleted=8;
         int bonus=100;
         boolean gameover=true;
-        int finalscore=calculatescore(score,levelcompleted,bonus,gameover);
-        System.out.println("the final score is :"+finalscore);
-
-        
-
-        
-    }
-    public static int calculatescore(int score,int levelcompleted,int bonus,boolean gameover){
+        int finalscore=score;
         if (gameover){
-            int finalscore=score+(levelcompleted*bonus)+1000;
-            return finalscore;
+            finalscore+=(level_completed*bonus);
+            System.out.println("the final score is :"+finalscore);
         }
-        return -1;
+
+        
+
+        
+    
     }
     
     
